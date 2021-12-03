@@ -1,0 +1,786 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    border: 0;
+    background-color: transparent;}
+
+
+body{
+    font-family: 'ChosunSm';
+    font-family: 'ChosunKm';
+    
+}
+
+img.pc{
+    display: none;
+}
+.gnb{
+    display: none;
+}
+
+header{
+    background-color: #814129; 
+    height: 90px;
+    position: relative;
+}
+header .wrap{
+   
+
+}
+header .bottom .wrap h1{
+    text-align: center;
+    line-height: 90px;
+    
+
+}
+header .bottom .wrap h1 img{
+  width: 143px;
+  height: auto;
+    
+}
+header .bottom .wrap .open img{
+    width: 30px;
+}
+header .bottom .wrap .open{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .util{
+    display:none;
+}
+nav{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    right: -80%;
+    background-color: #fff;
+    top: 0;
+    z-index: 9999;
+   
+
+}
+nav .menu{
+    height: 90px;
+    background-color:#814129;
+    line-height: 90px;
+    padding-left: 60px;
+    font-size: 20px;
+    font-family: 'ChosunKm';
+}
+nav .wrap .close img{
+    width: 30px;
+}
+nav .wrap .close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+nav .f_menu li{
+    text-align: left;
+    padding: 18px 60px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+  
+}
+nav .f_menu li a{
+    display: block;
+}
+nav .f_menu li:first-child{
+    background-color: #f0ede5;
+    font-size: 20px;
+    font-weight: 200;
+}
+nav .login{
+    display: flex;
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+nav .login li{
+    font-size: 15px;
+ 
+   
+}
+.banner{
+    width: 100%;
+    font-size: 0;
+}
+
+.banner img{
+    width: 100%;
+}
+.main{
+    background-color:#f0ede5;
+}
+.main .box{
+    margin-top: 52px;
+    margin: 52px 2vw 0 2vw;
+    position: relative;
+}
+.main img.m{
+    width: 100%;
+}
+
+.main .box img.pc{display: none;}
+
+.main .box .title{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    color: #fff;
+    font-family: 'ChosunSm';
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.main .box .title h2{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 31px;
+}
+.main .box .title h2::before{
+    margin-bottom: 8px;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.main .box .title p{
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+.slick-dots{
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; 
+    
+}
+.slick-dots li{
+    width: 15px;
+    height: 15px;
+    margin:0 5px;
+    background-color: #814129;
+    border-radius: 50%;
+    text-indent: -99999px;
+
+}
+
+.month .wrap{
+    margin: 0 auto;
+    width: 272px;
+}
+.month .wrap button img{
+    width: 20px;
+    height: auto;
+}
+.month .wrap .arrow{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.month .wrap .arrow .prev{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+.month .wrap .arrow .next{
+    position: absolute;
+    right: 25%;
+    top: 20%;
+
+}
+
+.month .wrap .mon{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 45px;
+}
+.month .wrap .cal{
+    width: 100%;
+    overflow: scroll hidden;
+}
+.month .wrap .day{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 100;
+    justify-content: space-between;
+    width: calc((20px + 20px) * 30);
+    margin-top: 21px;
+}
+.month .wrap .day::after{
+    content: '';
+    display: block;
+    width: calc((20px + 20px) * 30);
+    height: 2px;
+    background-color: #e2d9bb;
+    margin: 19px 0;
+}
+.month .wrap .day li{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.month .wrap .day li a{
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.month .wrap .festi{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-around;
+    margin-bottom: 48px;
+}
+.month .wrap .festi .m_f{
+    font-size: 14px;
+    font-family: 'ChosunKm';
+    color: #814129;
+    
+}
+
+.month .wrap .festi .all{
+    font-size: 14px;
+    font-family: 'ChosunSm';
+    background-color: #814129;
+    color: #fff;
+    padding: 3px 9px;
+    border-radius: 100px;
+}
+
+.notice .wrap{
+    margin: 0 auto 28px;
+    width: 272px;
+}
+.notice .wrap h3{
+    text-align: center;
+    margin-bottom: 27px;
+    font-size: 14px;
+}
+.notice .wrap .not1{
+    display: flex;
+    font-family: 'ChosunSm';
+    padding: 7px 0;
+    border-top: 0.5px solid #ccc;
+    
+}
+.notice .wrap .not1:last-child{
+    border-bottom: 0.5px solid #ccc;
+}
+.notice .wrap .not1 .mon{
+    color: #b56349;
+    font-size: 15px;
+    margin-right: 7px;
+}
+
+.notice .wrap .not1 .in{
+    font-size: 11px;
+    line-height: 30px;
+}
+.madang{
+    background-color: #f0ede5;
+}
+
+.madang .pc{
+    display: none;
+}
+.madang h3{
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+}
+.madang .wrap{
+    width: 250px;
+    margin: 0 auto;
+    
+}
+
+.madang .wrap .madang1{
+    border: 1px solid #814129;
+    width: 100px;
+    margin: 0 15px 30px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.madang .wrap .madang1 .tit{
+    font-family: 'ChosunSm';
+    font-size: 13px;
+    padding: 20px 0;
+    
+}
+.madang .wrap .madang1 .tit::before{
+    margin-bottom: 2px;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: #814129;
+}
+.madang .wrap .madang1 .tit3{
+    font-family: 'ChosunKm';
+    font-size: 12px;
+    text-align: center;
+    margin: 17px 0;
+    
+}
+.madang .wrap .madang1 .m{
+    margin: 0 auto;
+}
+.madang .wrap .madang1 .m img{
+    width: 100%;
+}
+
+.madang1 .slick-slide .slick-current .slick-active{
+    width: 129px;
+}
+
+.ad img.pc{
+    display: none;
+}
+
+.ad .wrap{
+    background-color: #f0ede5;
+    margin: 0 auto;
+    
+}
+.ad .m{
+    width: 100%;
+    height: auto;
+    padding-bottom: 29px;
+    background-color:#f0ede5;
+    
+}
+
+.footer{
+    background-color: #814129; 
+}
+.footer .wrap{
+    margin: 0 auto;
+    width: 370px;
+    display: flex;
+   
+}
+.footer img{
+    width: 85px;
+    height: auto;
+}
+
+
+.footer .add{
+    font-size: 8px;
+    color: #fff;
+    font-family: 'ChosunSm';
+    padding: 9px 0;
+   
+}
+/*moblie*/
+
+@media all and (min-width: 1261px){
+    img.m{display: none;}
+    img.pc{display: block;}
+
+
+
+    header{
+        position: relative;
+        top: 0;
+        left: 0;
+        
+        
+    }
+    header .top{
+        background-color: #814129;
+    }
+
+    header .top .util{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #fff;
+        height: 45px;
+        width: 1532px;
+        margin: 0 auto;
+    }
+    header .top .util li{
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    header .bottom{
+        background-color: #f0ede5;
+        
+    }
+    header .bottom .wrap{
+        height: 225px;
+        width: 1532px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        background-image: url(../images/bg_top.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    header .bottom .gnb{
+        display: flex;
+        margin-left: 550px;
+    }
+    header .bottom .gnb li{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    header .bottom h1 img.pc{
+        width: 360px;
+        height: auto;
+    }
+
+    header .bottom .open{
+        position: unset;
+        transform: unset;
+        margin-top: 110px;
+    }
+
+    nav{
+        position: absolute;
+        top: 200%;
+        left: 0;
+        background-color:#f0ede5;
+        width: 100%;
+        height: 1030px;
+        background-image: url(../images/mmmmenu.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        display: none;
+        
+       
+    }
+    nav .wrap{
+        width: 1534px;
+        height: 1030px;
+         margin: 0 auto;
+         display: flex;
+         flex-wrap: wrap;
+
+    }
+
+    nav .wrap .close{
+        margin-right: 163px;
+    }
+    nav .wrap .menu{
+       display: none;
+       
+    }
+    nav .wrap .f_menu{
+        background-color: unset;
+        border: 0;
+        margin-top: 130px;
+        width:300px;
+    
+    }
+
+    nav .wrap .f_menu li{
+        border: 0;
+        background-color: transparent;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+
+    nav .wrap .f_menu li:first-child{
+        border-bottom: 3px solid #814129;
+        display: inline-block;
+    }
+
+    nav .wrap .login{
+        display: none;
+    }
+
+    .banner{
+        margin-top: 130px;
+    }
+
+    .main{
+        background-image: url(../images/bg_bottom.png);
+        background-position: bottom;
+        display: flex;
+        flex-wrap: wrap;
+        background-repeat: no-repeat;
+        
+        
+       
+       
+    }
+    .main .box img.m{
+        display: none;
+    }
+    .main .box img.pc{
+        display: block;
+    }
+    .main .box{
+        position: unset;
+        
+    }
+    .main .box .title{
+        position: unset;
+        color: #000;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+    .main .box .title h2{
+        font-size: 32px;
+        font-family: 'ChosunKm';
+    }
+
+    .main .box .title p{
+        font-size: 20px;
+        font-family: 'ChosunSm';
+    }
+    .main .b_1 img{
+        width: 723px;
+    }
+
+    .main .b_1{
+        padding-left: 257px;
+        height: 470px;
+        padding-top: 171px;
+    }
+    .main .b_1 p{
+        width: 570px;
+    }
+    .main .b_2 img{
+        width: 675px;
+    }
+    .main .b_2{
+        padding-top: 171px;
+    }
+    .main .b_3 img{
+        width: 646px;
+    }
+
+    .main .b_3{
+        padding-left: 330px;
+        padding-top: 0;
+        transform: translateY(-30%);
+        display: flex;
+        flex-direction: row-reverse;
+     
+    }
+    .main .b_3 .title{
+        
+        margin: 320px 0 0 65px;
+    }
+    .main .box .title h2::before{
+        margin-bottom: 8px;
+        content: '';
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #814129;
+        
+    }
+    .month .wrap .cal{
+        overflow: unset;
+    }
+
+    .month .wrap{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .month .wrap .arrow img{
+        width: 30px;
+        height: 30px;
+    }
+    .month .wrap .mon{
+        font-size: 47px;
+        font-family: 'ChosunSm';
+    }
+
+    .month .wrap .mon span{
+        font-size: 63px;
+        font-family: 'ChosunSm';
+    }
+    .month .wrap .cal{
+        font-size: 18px;
+        
+    }
+    .month .wrap .cal .day li{
+        transition: all 0.3s;
+        
+    }
+    .month .wrap .cal .day li:hover{
+        background-color: #b56349;
+        border-radius: 100px;
+    }
+
+    .month .wrap .festi p{
+        font-size: 18px;
+    }
+    .month .wrap .festi{
+        justify-content: center;
+        margin-bottom: 103px;
+        
+    }
+
+    .month .wrap .festi .m_fp{
+        margin:0 30px 0 30px;
+    }
+    .notice{
+        background-image: url(../images/bg_2.png);
+        background-position: top top;
+        padding-bottom: 220px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .notice .wrap{
+        margin: 0 auto;
+        width: 1100px;
+
+    }
+    .notice .wrap .not1{
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .notice .wrap .not1 .mon{
+        font-size: 53px;
+        margin: 0;
+        
+    }
+    .notice .wrap .not1 .in{
+        font-size: 19px;
+    }
+    .notice .wrap h3{
+        font-size: 25px;
+        font-family: 'ChosunSm';
+        margin-bottom: 40px;
+    }
+    .notice .wrap .not1 img{
+        width: 249px;
+        height: 142px;
+    }
+    .madang{
+        background-image: url(../images/bg3REAL.png);
+        background-size: cover;
+        /*background-repeat: no-repeat;*/
+        padding-bottom: 106px;
+    }
+    .madang .wrap{
+        width: 1250px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .madang h3{
+        font-size: 30px;
+        font-family: 'ChosunSm';
+    }
+
+    .madang .wrap .madang1{
+        width: 416px;
+        border-top: 0;
+        border-bottom: 0;
+        height: 555px;
+        border-right:0 ;
+        margin-right:0 ;
+        padding-right: 0;
+    }
+    
+    .madang .wrap .madang1 .tit{
+        font-size: 23px;
+    }
+    .madang .wrap .madang1 .tit::before{
+        margin-bottom: 2px;
+        content: '';
+        display: block;
+        width: 80px;
+        height: 3px;
+        background-color: #814129;
+    }
+    
+    .madang .wrap .madang1 .tit2{
+        display: block;
+        margin-top: 42px;
+        line-height: 26px;
+        height: 93px;
+    }
+    .madang .wrap .madang1 .tit3{
+        font-family: 'ChosunKm';
+        font-size: 15px;
+        text-align: unset;
+        margin: 58px 0;
+        
+        
+        
+    }
+    .madang .wrap .madang1 img.pc{
+        display: block;
+        
+        
+       /* width: 389px;
+        height: 238px;*/
+    }
+    .madang .wrap .madang1 img.m{
+        display: none;
+    }
+   .ad .item img.pc{
+        display: block;
+        width: 1243px;
+        height: auto;
+    }
+    .ad .item img.m{
+        display: none;
+    }
+    .ad{
+       
+       font-size: 0;
+        background-image: url(../images/bg3REAL.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+    .ad .wrap{
+        margin: 0 auto;
+        width: 1245px;
+    }
+   .footer{
+       background-color: #814129;
+       font-size: 0;
+       box-sizing: border-box;
+   }
+   .footer .wrap{
+       margin: 0 auto;
+       width: 1500px;
+   }
+   .footer .wrap img{
+       width: 290px;
+       height: 153px;
+   }
+   .footer .add{
+       font-size: 20px;
+       margin-top: 26px;
+       line-height: 45px;
+
+   }
+
+
+
+
+}
